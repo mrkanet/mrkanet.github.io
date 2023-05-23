@@ -144,6 +144,13 @@ const products = [
     description: 'Bu ürünün açıklaması.',
     prices: [24.99],
     image: 'product3.jpg'
+  },
+  {
+    id: 4,
+    title: 'Ürün 4',
+    description: 'Bu ürünün açıklaması.',
+    prices: [24.99],
+    image: 'product4.jpg'
   }
 ];
 
