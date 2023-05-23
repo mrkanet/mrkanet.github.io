@@ -68,11 +68,11 @@ function selectPrice(productId, price) {
 
 // Sepete ürün ekleyen fonksiyon
 function addToCart(productId) {
-  console.log(products.find(item =>  item.id == productId ))
-  if (products.find(item =>  item.id == productId ).prices.length == 1) {
+  console.log(products.find(item => item.id == productId))
+  if (products.find(item => item.id == productId).prices.length == 1) {
     const cartItem = document.createElement('div');
     cartItem.classList.add('cart-item', 'col-lg-4', 'col-md-6', 'col-sm-12');
-    let product = products.find(item =>  item.id == productId )
+    let product = products.find(item => item.id == productId)
     selectPrice(productId, product.prices[0])
     cartItem.innerHTML = `
     <div class="card mb-4">
@@ -88,7 +88,7 @@ function addToCart(productId) {
   } else if (selectedPrice[productId]) {
     const cartItem = document.createElement('div');
     cartItem.classList.add('cart-item', 'col-lg-4', 'col-md-6', 'col-sm-12');
-    let product = products.find(item =>  item.id == productId )
+    let product = products.find(item => item.id == productId)
     cartItem.innerHTML = `
     <div class="card mb-4">
       <p>${product.title}</p>

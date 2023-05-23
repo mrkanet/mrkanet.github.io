@@ -22,10 +22,9 @@
   margin-right: 5px;
 }
 
-ul {
+.listToLeft {
   list-style-type: none;
   margin-left: -40px;
-  margin-top: 5%;
 }
 
 .btn {
