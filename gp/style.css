@@ -1,0 +1,71 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.cart {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.price-options button {
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -40px;
+  margin-top: 5%;
+}
+
+.btn {
+  margin: 10px;
+}
+
+li>div>p {
+  text-align: center;
+  /* Paragrafı ortala */
+  white-space: nowrap;
+  /* Tek satırda görünmesini sağla */
+  overflow: hidden;
+  /* Taşan içeriği gizle */
+  text-overflow: ellipsis;
+  /* Taşan içeriği ... ile göster */
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.cart-item>div {
+  text-align: center;
+  /* Paragrafı ortala */
+  white-space: nowrap;
+  /* Tek satırda görünmesini sağla */
+  overflow: hidden;
+  /* Taşan içeriği gizle */
+  text-overflow: ellipsis;
+  /* Taşan içeriği ... ile göster */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
