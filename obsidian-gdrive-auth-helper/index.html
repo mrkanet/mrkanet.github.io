@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obsidian Google Drive Auth Helper</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const code = params.get('code');
+            const state = params.get('state'); // This 'state' will be our plugin ID
+
+            if (code && state) {
+                // Construct the Obsidian URI to redirect back to the plugin
+                const redirectUri = `obsidian://plugin/${state}/oauth2callback?code=${code}`;
+                window.location.href = redirectUri;
+            } else {
+                document.getElementById('message').innerText = 'Yetkilendirme kodu veya durum parametresi bulunamadı.';
+            }
+        };
+    </script>
+</head>
+<body>
+    <p id="message">Google Drive yetkilendirme işlemi tamamlanıyor...</p>
+    <p>Eğer otomatik olarak yönlendirilmezseniz, lütfen Obsidian uygulamasına geri dönün.</p>
+</body>
+</html>
